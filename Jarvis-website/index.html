@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Jarvis Website</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-con">
+				<div class="left-header">
+					<img src="img/icon.png" alt="logo">
+					<h1>jarvis</h1>
+				</div>
+				<div class="right-header">
+					<ul class='right-header-list'>
+						<li class='right-header-item'>
+							<a href="#about">Настройки</a>
+						</li>
+						<li class='right-header-item'>
+							<a href="#">Команды</a>
+						</li>
+						<li class='right-header-item'>
+							<a href="#">Скачать</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class='main'>
+		<div class="container">
+			<div class="main-section">
+				<div class="left-main">
+					<h1>Джарвис <br> <span>универсальный голосовой помощник</span></h1>
+					<p>Стек технологий джарвиса NodeJS + npm + TypeScript + Tauri + Vite + Svelte + Rust + SurrealDB <span>Установить самую новую версию можно ниже</span></p>
+					<a href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_4_x64_en-US.msi">Download <i class="fa-solid fa-download"></i></a>
+				</div>
+				<div class="right-main">
+					<img src="img/jarvis.png">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='about' id='about'>
+		<div class="container">
+			<div class="about-content">
+				<div class="left-about">
+					<h2><i class="fa-solid fa-gear"></i> Настройки джарвиса</h2>
+					<p>Перейдите в настройки джарвиса, там надо вписать свои API ключи от сервиса <a href="https://picovoice.ai/">Picovoice</a> и <a href="https://openai.com/blog/introducing-chatgpt-and-whisper-apis">ChatGpt</a> но версия с ChatGpt еще находится в разработке и поэтому вписывать API ключ не обязательно. Конфигурация джарвиса пока что не работает на виндовс 7 и не поддерживает системы 32 битных ОС. <span>У многих могут возникнуть ошибки, связанные с pv_recorder и picovoice. Ожидайте FIX 5 для новой версии джарвиса, там будет версия на CPAL. Скорее всего, это решит проблему.</span></p>
+					<p1>Ниже вы можете видеть скриншоты с интерфейса настройки джарвиса. Там нужно выбрать свой микрофон и поставить озвучку по желанию ну и ключ который я описал ранее</p1>
+				</div>
+				<div class="right-about">
+					<div class="img-about">
+						<img src="img/setting.png">
+						<p>Здесь можете вибрать голос асистента</p>
+					</div>
+					<div class="img-about">
+						<img src="img/setting-1.png">
+						<p>Здесь нужно выбрать свой микрофон</p>
+					</div>
+					<div class="img-about">
+						<img src="img/setting-2.png">
+						<p>Здесь нужно вписать свои API ключи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://kit.fontawesome.com/27c5a00e8d.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src='SmoothScroll.js'></script>
+</body>
+</html>
