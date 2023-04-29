@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Jarvis Website</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -37,18 +39,24 @@
 		</div>
 	</header>
 
-	<section class='main'>
+	<section class='main' id='main'>
 		<div class="container">
 			<div class="main-section">
 				<div class="left-main">
 					<h1>Джарвис <br> <span>универсальный голосовой помощник</span></h1>
-					<p>Стек технологий джарвиса NodeJS + npm + TypeScript + Tauri + Vite + Svelte + Rust + SurrealDB <span>Установить самую новую версию можно ниже</span></p>
+					<p>Стек технологий джарвиса NodeJS + npm + TypeScript + Tauri + Vite + Svelte + Rust + SurrealDB
+						<span>Установить самую новую версию можно ниже</span></p>
 					<div class="btn-con">
-						<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-						<label class="for-dropdown" for="dropdown">My Projects Menu <i class="fa-solid fa-download"></i></label>
+						<input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+						<label class="for-dropdown" for="dropdown">My Projects Menu <i
+								class="fa-solid fa-download"></i></label>
 						<div class="section-dropdown">
-							<a class='drop-down-link' href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_4_x64_en-US.msi">Download fix-4<i class="fa-solid fa-download"></i></a>
-							<a class='drop-down-link' href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_3_x64_en-US.msi">Download fix-3<i class="fa-solid fa-download"></i></a>
+							<a class='drop-down-link'
+								href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_4_x64_en-US.msi">Download
+								fix-4<i class="fa-solid fa-download"></i></a>
+							<a class='drop-down-link'
+								href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_3_x64_en-US.msi">Download
+								fix-3<i class="fa-solid fa-download"></i></a>
 						</div>
 					</div>
 				</div>
@@ -64,8 +72,16 @@
 			<div class="about-content">
 				<div class="left-about">
 					<h2><i class="fa-solid fa-gear"></i> Настройки джарвиса</h2>
-					<p>Перейдите в настройки джарвиса, там надо вписать свои API ключи от сервиса <a href="https://picovoice.ai/">Picovoice</a> и <a href="https://openai.com/blog/introducing-chatgpt-and-whisper-apis">ChatGpt</a> но версия с ChatGpt еще находится в разработке и поэтому вписывать API ключ не обязательно. Конфигурация джарвиса пока что не работает на виндовс 7 и не поддерживает системы 32 битных ОС. <span>У многих могут возникнуть ошибки, связанные с pv_recorder и picovoice. Ожидайте FIX 5 для новой версии джарвиса, там будет версия на CPAL. Скорее всего, это решит проблему.</span></p>
-					<p1>Ниже вы можете видеть скриншоты с интерфейса настройки джарвиса. Там нужно выбрать свой микрофон и поставить озвучку по желанию ну и ключ который я описал ранее</p1>
+					<p>Перейдите в настройки джарвиса, там надо вписать свои API ключи от сервиса <a
+							href="https://picovoice.ai/">Picovoice</a> и <a
+							href="https://openai.com/blog/introducing-chatgpt-and-whisper-apis">ChatGpt</a> но версия с
+						ChatGpt еще находится в разработке и поэтому вписывать API ключ не обязательно. Конфигурация
+						джарвиса пока что не работает на виндовс 7 и не поддерживает системы 32 битных ОС. <span>У
+							многих могут возникнуть ошибки, связанные с pv_recorder и picovoice. Ожидайте FIX 5 для
+							новой версии джарвиса, там будет версия на CPAL. Скорее всего, это решит проблему.</span>
+					</p>
+					<p1>Ниже вы можете видеть скриншоты с интерфейса настройки джарвиса. Там нужно выбрать свой микрофон
+						и поставить озвучку по желанию ну и ключ который я описал ранее</p1>
 				</div>
 				<div class="right-about">
 					<div class="img-about">
@@ -85,7 +101,7 @@
 		</div>
 	</section>
 
-	<section class="command">
+	<section class="command" id='command'>
 		<div class="container">
 			<div class="command-content">
 				<h1>Примери команд для джарвиса реализование с помощью AutoHotkey</h1>
@@ -125,9 +141,11 @@
 			</div>
 			<div class="command-content">
 				<h1>Далее нужно скомпилировать вайл Run youtube.ahk</h1>
-				<p>Для этого нужно скачать програму 
-					<a class='autohotkey' href="https://www.autohotkey.com/">AutoHotkey с официального сайта</a> и зайти в нее
-					Далее выбираем нужный файл в нашем случае Run youtube.ahk, и ниже пишем имя файла, которое мы хотим получить - Run youtube.exe, и все, файл скомпилирован!
+				<p>Для этого нужно скачать програму
+					<a class='autohotkey' href="https://www.autohotkey.com/">AutoHotkey с официального сайта</a> и зайти
+					в нее
+					Далее выбираем нужный файл в нашем случае Run youtube.ahk, и ниже пишем имя файла, которое мы хотим
+					получить - Run youtube.exe, и все, файл скомпилирован!
 				</p>
 				<div class="command-content-img">
 					<img class='site-img' src="img/site.png">
@@ -137,9 +155,279 @@
 		</div>
 	</section>
 
+	<section class='command-example'>
+		<div class="container">
+			<div class="command-content">
+				<h1>Множество примеров команд для джарвиса</h1>
+				<h1>Дискорд: Откритие, Закритие</h1>
+				<p>Open discord.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						Run shell:AppsFolder\com.squirrel.Discord.Discord
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>Close discord.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						WinKill, AHK_exe Discord.exe
+						Process, Close, Discord.exe
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>Open discord.yaml</p>
+				<pre>
+					<code class="language-autohotkey">
+						list:
+							- command:
+								action: ahk
+								exe_path: ahk/Open discord.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- открой дискорд
+							- запусти дискорд
+							- включи дискорд
+							- дискорд
+
+							- command:
+								action: ahk
+								exe_path: ahk/Close discord.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- закрой дискорд
+							- отключи дискорд
+							- выключи дискорд
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<h1>Телеграм: Откритие, Закритие</h1>
+				<p>Open telegram.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						Run C:\Users\Vassago\AppData\Roaming\Telegram Desktop\Telegram.exe
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>Close telegram.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						WinKill, AHK_exe Telegram.exe
+						Process, Close, Telegram.exe
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>command.yaml</p>
+				<pre>
+					<code class="language-autohotkey">
+						list:
+							- command:
+								action: ahk
+								exe_path: ahk/Open telegram.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- запусти телеграмм
+							- открой телеграмм
+							- включи телеграмм
+							- запусти телеграм
+							- открой телеграм
+							- включи телеграм
+
+							- command:
+								action: ahk
+								exe_path: ahk/Close telegram.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- закрой телеграмм
+							- выключи телеграмм
+							- отключи телеграмм
+							- закрой телеграм
+							- выключи телеграм
+							- отключи телеграм
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<h1>Steam: Откритие, Закритие</h1>
+				<p>Open steam.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						WinKill, AHK_exe Steam.exe
+						Process, Close, Steam.exe
+
+						Run, steam://open/bigpicture
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>Close steam.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						WinKill, AHK_exe Steam.exe
+						Process, Close, Steam.exe
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>command.yaml</p>
+				<pre>
+					<code class="language-autohotkey">
+						list:
+							- command:
+								action: ahk
+								exe_path: ahk/Open steam.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- включи игровой режим
+							- перейди в игровой режим
+							- я хочу поиграть
+							- включи стим
+							- запусти стим
+							- открой стим
+							- стим
+
+							- command:
+								action: ahk
+								exe_path: ahk/Close steam.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+								- ok4
+							phrases:
+							- рабочий режим
+							- вернись в рабочий режим
+							- отключи игровой режим
+							- выйди из игрового режима
+							- выход с игрового режима
+							- рабочее пространство
+							- выключи игровой режим
+							- выключи стим
+							- отключи стим
+							- выйди из стима
+							- закрой стим
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<h1>Weather: Откритие, Закритие</h1>
+				<p>Open weather.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						Run shell:AppsFolder\Microsoft.BingWeather_8wekyb3d8bbwe!App
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>Close weather.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						WinKill, AHK_exe Microsoft.Msn.Weather.exe
+						Process, Close, Microsoft.Msn.Weather.exe
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<p>command.yaml</p>
+				<pre>
+					<code class="language-autohotkey">
+						list:
+							- command:
+								action: ahk
+								exe_path: ahk/Open weather.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- открой погоду
+							- покажи погоду
+							- запусти погоду
+							- погода
+							- какая сегодня погода
+
+							- command:
+								action: ahk
+								exe_path: ahk/Close weather.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+							phrases:
+							- закрой погоду
+							- отключи погоду
+							- выключи погоду
+							- закрой приложение погоды
+							- отключи приложение погоды
+							- выключи приложение погоды
+					</code>
+				</pre>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="main__footer">
+						<h4 class="footer__title">Links:</h4>
+						<ul>
+							<li class='footer__item'>
+								<a class="footer__list-title"
+								href="#main">Home</a></li>
+							<li class='footer__item'>
+								<a class="footer__list-title"
+								href="#setting">Setting</a></li>
+							<li class='footer__item'>
+								<a class="footer__list-title"
+								href="#command">Comamnd</a></li>
+						</ul>
+				</div>
+			</div>
+			<hr class='footer__down__hr'>
+			<p class="footer__down_text">
+				© 2023.<span>Allen</span> All rights reserved.
+			</p>
+		</footer>
+	</section>
+
 
 	<script src="https://kit.fontawesome.com/27c5a00e8d.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+		integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 	<script src='SmoothScroll.js'></script>
 </body>
+
 </html>
