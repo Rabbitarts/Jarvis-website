@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
 
 * {
 	padding: 0;
@@ -67,15 +68,27 @@ section {
 }
 
 .right-header-item a {
-	transition: 0.5s;
+	position: relative;
+	transition: color 0.5s ease-in-out;
 }
 
 .right-header-item a:hover {
+	color: #ffeba7;
+}
+
+.right-header-item a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
 	background: #ffeba7;
-	color: #102770;
-	padding: 20px 10px;
-	border-radius: 10px;
-	transition: 0.5s;
+	transition: width 0.5s ease-in-out;
+}
+
+.right-header-item a:hover::before {
+	width: 100%;
 }
 
 .main-section {
@@ -110,20 +123,6 @@ section {
 	display: inline-block;
 	color: #ffeba7;
 	margin-top: 25px;
-}
-
-.left-main a {
-	background: #ffeba7;
-	padding: 10px 10px;
-	border-radius: 10px;
-	color: #102770;
-	font-size: 18px;
-	max-width: 180px;
-	text-align: center;
-}
-
-.left-main a i {
-	margin-left: 5px;
 }
 
 .right-main img {
@@ -177,3 +176,52 @@ section {
 	margin-top: 5px;
 	color: #dac990;
 }
+
+.command-content {
+	margin-bottom: 25px;
+}
+
+.command-content h1 {
+	margin-bottom: 25px;
+}
+
+pre {
+    font-family: "Fira Code", monospace;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+pre[class*=language-] {
+    background: #f5f2f0;
+	padding: 0em 50px 0px 30px;
+}
+
+code[class*=language-], pre[class*=language-] {
+	tab-size: 0;
+	font-size: 1.1em;
+}
+
+.autohotkey {
+	color: #ffeba7;
+	text-decoration: underline; 
+}
+
+.command-content-img {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+.autohotkey-img {
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+.site-img {
+	width: 675px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+

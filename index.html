@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-autohotkey.min.js"></script>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/dropdown.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Jarvis Website</title>
 </head>
@@ -39,7 +43,14 @@
 				<div class="left-main">
 					<h1>Джарвис <br> <span>универсальный голосовой помощник</span></h1>
 					<p>Стек технологий джарвиса NodeJS + npm + TypeScript + Tauri + Vite + Svelte + Rust + SurrealDB <span>Установить самую новую версию можно ниже</span></p>
-					<a href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_4_x64_en-US.msi">Download <i class="fa-solid fa-download"></i></a>
+					<div class="btn-con">
+						<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+						<label class="for-dropdown" for="dropdown">My Projects Menu <i class="fa-solid fa-download"></i></label>
+						<div class="section-dropdown">
+							<a class='drop-down-link' href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_4_x64_en-US.msi">Download fix-4<i class="fa-solid fa-download"></i></a>
+							<a class='drop-down-link' href="https://github.com/Priler/jarvis/releases/download/beta/jarvis-app_0.0.1_FIX_3_x64_en-US.msi">Download fix-3<i class="fa-solid fa-download"></i></a>
+						</div>
+					</div>
 				</div>
 				<div class="right-main">
 					<img src="img/jarvis.png">
@@ -73,6 +84,59 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="command">
+		<div class="container">
+			<div class="command-content">
+				<h1>Примери команд для джарвиса реализование с помощью AutoHotkey</h1>
+				<p>Run youtube.ahk</p>
+				<pre>
+					<code class="language-autohotkey">
+						#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+						; #Warn  ; Enable warnings to assist with detecting common errors.
+						SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+						SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+						
+						Run C:/Program Files (x86)/Google/Chrome/Application/chrome.exe "https://youtube.com"
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<h1>Еще нужно написать код активации по голосу в .yaml файл</h1>
+				<p>Run youtube.yaml</p>
+				<pre>
+					<code class="language-autohotkey">
+						- command:
+								action: ahk
+								exe_path: ahk/Run youtube.exe
+								exe_args:
+							voice:
+								sounds:
+								- ok1
+								- ok2
+								- ok3
+								- ok4
+							phrases:
+							- открой ютуб
+							- ютуб
+							- запусти ютуб 
+					</code>
+				</pre>
+			</div>
+			<div class="command-content">
+				<h1>Далее нужно скомпилировать вайл Run youtube.ahk</h1>
+				<p>Для этого нужно скачать програму 
+					<a class='autohotkey' href="https://www.autohotkey.com/">AutoHotkey с официального сайта</a> и зайти в нее
+					Далее выбираем нужный файл в нашем случае Run youtube.ahk, и ниже пишем имя файла, которое мы хотим получить - Run youtube.exe, и все, файл скомпилирован!
+				</p>
+				<div class="command-content-img">
+					<img class='site-img' src="img/site.png">
+					<img class='autohotkey-img' src="img/autohotkey.png">
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<script src="https://kit.fontawesome.com/27c5a00e8d.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
